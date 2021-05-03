@@ -151,13 +151,21 @@ namespace Monogame_VS2019_Hx002_Physicstest
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
             
             _spriteBatch.Begin();
 
             for (int i = 0; i < _codelines.Count; i++)
             {
-                _spriteBatch.DrawString(_defaultFont, _codelines[i], Vector2.Zero + new Vector2(0, i * _defaultFont.LineSpacing), Color.White);
+
+                Color color = Color.White;
+
+                if (i == _currentLine)
+                {
+                    color = Color.Yellow;
+                }
+                
+                _spriteBatch.DrawString(_defaultFont, (i + 1) + "  " + _codelines[i], Vector2.Zero + new Vector2(0, i * _defaultFont.LineSpacing), color);
             }
             
             _spriteBatch.End();
