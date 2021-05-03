@@ -5,8 +5,10 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/asame/RiderProjects/Gamepad_Coder_IDE_Hx/Gamepad_Coder_IDE_Hx/Content/DefaultFont.spritefont</File>
+    <File>C:/Users/asame/RiderProjects/Gamepad_Coder_IDE_Hx/Gamepad_Coder_IDE_Hx/Content/sheet.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/asame/RiderProjects/Gamepad_Coder_IDE_Hx/Gamepad_Coder_IDE_Hx/Content/DefaultFont.spritefont</SourceFile>
-  <SourceTime>2018-12-08T17:35:46+01:00</SourceTime>
+  <SourceTime>2021-05-03T15:20:57.7391149+02:00</SourceTime>
   <DestFile>C:/Users/asame/RiderProjects/Gamepad_Coder_IDE_Hx/Gamepad_Coder_IDE_Hx/Content/bin/DefaultFont.xnb</DestFile>
-  <DestTime>2021-05-03T14:53:25.4920596+02:00</DestTime>
+  <DestTime>2021-05-03T16:27:09.5706407+02:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
