@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FQBnw3Pm1HYR9iW5fVb5HPhkzh9YGZRfYyMUA/wtgKd7LHy5/LW+PWic42z+7ubJ/vrFhLzBj8ZnnZppi1RL1w==",
+  "dgSpecHash": "5O0u37ZlqCIQtB5+kFFFmNOVhRqTD/F9df2YFTEu1BshEWK339nxkml4XkmUZ+i2+KI6DywptBaV1UQg/iBdRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\asame\\RiderProjects\\Gamepad_Coder_IDE_Hx\\Gamepad_Coder_IDE_Hx\\Gamepad_Coder_IDE_Hx.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\asame\\.nuget\\packages\\microsoft.visualbasic\\10.0.1\\microsoft.visualbasic.10.0.1.nupkg.sha512",
     "C:\\Users\\asame\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\asame\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\asame\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\asame\\.nuget\\packages\\monogame.framework.content.pipeline\\3.8.0.1641\\monogame.framework.content.pipeline.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\asame\\.nuget\\packages\\monogame.framework.windowsdx\\3.8.0.1641\\monogame.framework.windowsdx.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\asame\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",

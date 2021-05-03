@@ -18,6 +18,8 @@ namespace Monogame_VS2019_Hx002_Physicstest
         private List<string> _codelines = new List<string>();
         private int _currentLine = 0;
 
+        private SpriteFont _defaultFont;
+
         public IDE()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -43,7 +45,7 @@ namespace Monogame_VS2019_Hx002_Physicstest
                 Console.WriteLine("GamePad connected...");
             }
 
-            _codelines[_currentLine] = "";
+            _codelines.Add("");
             
             base.Initialize();
         }
@@ -51,6 +53,8 @@ namespace Monogame_VS2019_Hx002_Physicstest
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            _defaultFont = Content.Load<SpriteFont>("DefaultFont");
         }
 
         protected override void Update(GameTime gameTime)
@@ -134,7 +138,7 @@ namespace Monogame_VS2019_Hx002_Physicstest
                     
                     //RShoulder pressed
                     _currentLine += 1;
-                    _codelines[_currentLine] = "";
+                    _codelines.Add("");
 
                 }
                 
@@ -148,6 +152,15 @@ namespace Monogame_VS2019_Hx002_Physicstest
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            
+            _spriteBatch.Begin();
+
+            for (int i = 0; i < _codelines.Count; i++)
+            {
+                _spriteBatch.DrawString(_defaultFont, _codelines[i], Vector2.Zero + new Vector2(0, i * _defaultFont.LineSpacing), Color.White);
+            }
+            
+            _spriteBatch.End();
             
             base.Draw(gameTime);
         }

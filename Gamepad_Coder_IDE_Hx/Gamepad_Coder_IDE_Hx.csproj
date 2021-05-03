@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
       <PackageReference Include="MonoGame.Framework.Content.Pipeline" Version="3.8.0.1641" />
       <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.0.1641" />
     </ItemGroup>
@@ -14,6 +15,13 @@
       <Reference Include="Hx002, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>..\..\..\Documents\C# DLLs\netcoreapp3.1\Hx002.dll</HintPath>
       </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Content\Content.mgcb" />
+      <Content Include="Content\Content.mgcb" />
+      <None Remove="Content\DefaultFont.spritefont" />
+      <Content Include="Content\DefaultFont.spritefont" />
     </ItemGroup>
 
 </Project>
