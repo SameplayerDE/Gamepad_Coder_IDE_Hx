@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "n60Wj/ayKJ/mHOQqo5//+FAvjOw5F/vU9st+SoDAgpA6LKOAqkJnLVkFd/XDCfVvf44yIkCxF7LYMfwRvMn9Yw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\asame\\RiderProjects\\Gamepad_Coder_IDE_Hx\\Gamepad_Coder_IDE_Hx\\Gamepad_Coder_IDE_Hx.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\asame\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
