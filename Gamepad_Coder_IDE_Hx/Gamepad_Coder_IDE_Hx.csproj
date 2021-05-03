@@ -5,4 +5,15 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MonoGame.Framework.Content.Pipeline" Version="3.8.0.1641" />
+      <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.0.1641" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Hx002, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\Documents\C# DLLs\netcoreapp3.1\Hx002.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>
