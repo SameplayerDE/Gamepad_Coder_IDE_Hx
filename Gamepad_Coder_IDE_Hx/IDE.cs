@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Hx002;
 using Hx002.Framework;
 using Hx002.Framework.Components;
@@ -12,6 +13,10 @@ namespace Monogame_VS2019_Hx002_Physicstest
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+
+        private string code = "Test";
+        private List<string> _codelines = new List<string>();
+        private int _currentLine = 0;
 
         public IDE()
         {
@@ -33,7 +38,13 @@ namespace Monogame_VS2019_Hx002_Physicstest
         {
             Hx.Initialize(this);
 
+            if (HxInput.IsGamePadConnected(PlayerIndex.One))
+            {
+                Console.WriteLine("GamePad connected...");
+            }
 
+            _codelines[_currentLine] = "";
+            
             base.Initialize();
         }
 
@@ -50,6 +61,86 @@ namespace Monogame_VS2019_Hx002_Physicstest
             {
                 return;
             }
+            
+            if (HxInput.IsGamePadConnected(PlayerIndex.One))
+            {
+
+                if (HxInput.IsButtonPressed(PlayerIndex.One, Buttons.A))
+                {
+                    
+                    //A pressed
+                    _codelines[_currentLine] += ".A";
+                    
+                }
+                
+                if (HxInput.IsButtonPressed(PlayerIndex.One, Buttons.B))
+                {
+                    
+                    //B pressed
+                    _codelines[_currentLine] += ".B";
+                    
+                }
+                
+                if (HxInput.IsButtonPressed(PlayerIndex.One, Buttons.X))
+                {
+                    
+                    //X pressed
+                    _codelines[_currentLine] += ".X";
+                    
+                }
+                
+                if (HxInput.IsButtonPressed(PlayerIndex.One, Buttons.Y))
+                {
+                    
+                    //Y pressed
+                    _codelines[_currentLine] += ".Y";
+                    
+                }
+                
+                if (HxInput.IsButtonPressed(PlayerIndex.One, Buttons.DPadUp))
+                {
+                    
+                    //Dup pressed
+                    _codelines[_currentLine] += ".U";
+
+                }
+                
+                if (HxInput.IsButtonPressed(PlayerIndex.One, Buttons.DPadDown))
+                {
+                    
+                    //Ddown pressed
+                    _codelines[_currentLine] += ".D";
+
+                }
+                
+                if (HxInput.IsButtonPressed(PlayerIndex.One, Buttons.DPadLeft))
+                {
+                    
+                    //Dleft pressed
+                    _codelines[_currentLine] += ".L";
+
+                }
+                
+                if (HxInput.IsButtonPressed(PlayerIndex.One, Buttons.DPadRight))
+                {
+                    
+                    //Dright pressed
+                    _codelines[_currentLine] += ".R";
+
+                }
+                
+                if (HxInput.IsButtonPressed(PlayerIndex.One, Buttons.RightShoulder)) // New Line
+                {
+                    
+                    //RShoulder pressed
+                    _currentLine += 1;
+                    _codelines[_currentLine] = "";
+
+                }
+                
+            }
+
+            Window.Title = code;
 
             base.Update(gameTime);
         }
